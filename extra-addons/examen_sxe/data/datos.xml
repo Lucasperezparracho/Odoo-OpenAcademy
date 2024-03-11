@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- Datos de ejemplo -->
+        <record model="my_module.product" id="product_1">
+            <field name="id">1</field>
+            <field name="producto">Producto 1</field>
+            <field name="viabilidad">0.75</field>
+        </record>
+        <record model="my_module.product" id="product_2">
+            <field name="id">2</field>
+            <field name="producto">Producto 2</field>
+            <field name="viabilidad">0.85</field>
+        </record>
+        <!-- Agrega más registros según sea necesario -->
+    </data>
+</odoo>

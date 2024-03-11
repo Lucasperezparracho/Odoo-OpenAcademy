@@ -1,0 +1,44 @@
+<odoo>
+    <data>
+        <!-- Tree view -->
+        <record id="view_product_tree" model="ir.ui.view">
+            <field name="name">examenSXE.product.tree</field>
+            <field name="model">examenSXE.product</field>
+            <field name="arch" type="xml">
+                <tree string="Product">
+                    <field name="id"/>
+                    <field name="producto"/>
+                    <field name="viabilidad"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_product_form" model="ir.ui.view">
+            <field name="name">examenSXE.product.form</field>
+            <field name="model">examenSXE.product</field>
+            <field name="arch" type="xml">
+                <form string="Product">
+                    <sheet>
+                        <group>
+                            <field name="id"/>
+                            <field name="producto"/>
+                            <field name="viabilidad"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action to open the tree view -->
+        <record id="action_product" model="ir.actions.act_window">
+            <field name="name">Products</field>
+            <field name="res_model">examenSXE.product</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu item to access the action -->
+        <menuitem id="menu_product" name="Products"/>
+        <menuitem id="menu_product_list" name="Product List" parent="menu_product"/>
+    </data>
+</odoo>
